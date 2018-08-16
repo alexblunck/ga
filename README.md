@@ -6,12 +6,12 @@ Simple tool to add Google Analytics tracking code to your website
 
 ## Installation
 ```bash
-npm install --save-dev @blunck/ja
+npm install --save-dev @blunck/ga
 ```
 
 ## Usage
 ```javascript
-import ga from '@blunck/js'
+import ga from '@blunck/ga'
 
 // Add gtag.js script & initialize
 ga.add('UA-XXXXXXXXX-X')
