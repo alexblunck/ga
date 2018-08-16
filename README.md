@@ -6,7 +6,7 @@ Simple tool to add Google Analytics tracking code to your website
 
 ## Installation
 ```bash
-npm install --save-dev @blunck/ga
+npm install @blunck/ga
 ```
 
 ## Usage
