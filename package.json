@@ -1,6 +1,6 @@
 {
   "name": "@blunck/ga",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple tool to add Google Analytics tracking code to your website",
   "main": "src/index.js",
   "scripts": {
