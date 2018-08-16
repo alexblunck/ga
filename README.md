@@ -17,7 +17,7 @@ import ga from '@blunck/js'
 ga.add('UA-XXXXXXXXX-X')
 
 // Initialize without anonymizing ip address
-ga.add('UA-XXXXXXXXX-X', add)
+ga.add('UA-XXXXXXXXX-X', false)
 
 // Use window.gtag i.e. to send events
 gtag('event', '<action>', {})
