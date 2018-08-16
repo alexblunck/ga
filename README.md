@@ -19,6 +19,11 @@ ga.add('UA-XXXXXXXXX-X')
 // Initialize without anonymizing ip address
 ga.add('UA-XXXXXXXXX-X', false)
 
+// Initialize with extra options
+ga.add('UA-XXXXXXXXX-X', true, {
+    page_path: '/home'
+})
+
 // Use window.gtag i.e. to send events
 gtag('event', '<action>', {})
 

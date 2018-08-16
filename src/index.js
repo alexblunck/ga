@@ -1,5 +1,13 @@
 export default {
-    add: (trackingId, anonymizeIp = true) => {
+    /**
+     * Add gtag.js script to document& expose gtag & gtagConfig
+     * functions on window object.
+     *
+     * @param {String}  trackingId
+     * @param {Boolean} [anonymizeIp]
+     * @param {Object}  [initialConfig]
+     */
+    add: (trackingId, anonymizeIp = true, initialConfig = {}) => {
         const elem = document.createElement('script')
         elem.type = 'text/javascript'
         elem.async = true
@@ -24,6 +32,6 @@ export default {
         }
 
         window.gtag('js', new Date())
-        window.gtagConfig()
+        window.gtagConfig(initialConfig)
     }
 }
