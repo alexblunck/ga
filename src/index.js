@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     /**
      * Add gtag.js script to document& expose gtag & gtagConfig
      * functions on window object.
