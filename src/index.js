@@ -13,6 +13,13 @@ module.exports = {
         elem.async = true
         elem.src = `https://www.googletagmanager.com/gtag/js?id=${trackingId}`
 
+        const exists = document.querySelector(`script[src="${elem.src}"]`)
+
+        // Don't add script twice
+        if (exists) {
+            return
+        }
+
         // Insert script before first <script> element
         const script = document.getElementsByTagName('script')[0]
         script.parentNode.insertBefore(elem, script)
